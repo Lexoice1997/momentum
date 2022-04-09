@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <audio></audio>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+
+  <div class="settings">
+    <div class="settings-content">
+      <div class="language-content">
+        <span>language</span>
+        <select name="language">
+          <option value="en">en</option>
+          <option value="ru">ru</option>
+        </select>
+      </div>
+      <div class="image-content">
+        <span>background</span>
+        <select class="background">
+          <option class="background-option" value="github">github</option>
+          <option class="background-option" value="unsplash">unsplash</option>
+          <option class="background-option" value="flickr">flickr</option>
+        </select>
+      </div>
+      <div class="display-content">
+        <div><span>Time</span><input class="time-check" type="checkbox"></div>
+        <div><span>Date</span><input class="date-check" type="checkbox"></div>
+        <div><span>Date</span><input class="welcome-check" type="checkbox"></div>
+        <div><span>Quote</span><input class="quote-check" type="checkbox"></div>
+        <div><span>Weather</span><input class="weather-check" type="checkbox"></div>
+        <div><span>Audio</span><input class="audio-check" type="checkbox"></div>
+      </div>
+    </div>
+    settings
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
